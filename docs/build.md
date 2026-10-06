@@ -27,7 +27,7 @@ python tools/test_minigpt_int4_kernel.py
 
 ## 发布
 
-`main` / PR / 手动触发运行构建与主机测试。`v*` 标签在相同构建成功后创建 Release，使用该次 artifact 中的 BDA、两份安装 ZIP 与 SHA256SUMS。仓库发行标签沿用默认 INT8 应用版本，例如 v0.3.6；同次包内的 INT4 有独立版本 0.4.2。
+`main` / PR / 手动触发运行构建与主机测试。`v*` 标签在相同构建成功后创建 Release，使用该次 artifact 中的 BDA、两份安装 ZIP 与 SHA256SUMS。仓库发行标签以默认 INT8 应用版本为基准，可带构建流程修订号，例如 v0.3.6+build.1；同次包内的 INT4 有独立版本 0.4.2。构建修订不改变设备程序版本。
 
 ```powershell
 python tools/package_release.py

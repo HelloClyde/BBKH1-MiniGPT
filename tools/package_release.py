@@ -43,5 +43,5 @@ def main():
         assets.extend([bda,archive])
     (out/'SHA256SUMS.txt').write_text(''.join(hashlib.sha256(p.read_bytes()).hexdigest()+'  '+p.name+'\n' for p in assets),encoding='ascii')
     for p in assets:print(p.name,p.stat().st_size,hashlib.sha256(p.read_bytes()).hexdigest())
-    (out/'release-notes.md').write_text("# BBKH1-MiniGPT v0.3.6\n\nINT8 0.3.6 / INT4 0.4.2，适用 H1/Y100 V1.41。\n\n- 原生中文输入法与气泡聊天；设备本地推理。\n- INT8 前缀 KV 复用、连续读取减少定位、启动自动比较额外常驻层与 DMA 双缓冲；可见进度且可跳过。\n- INT4 压缩权重优先全内存、双词元 MXU prefill 与前缀复用。\n- 两份安装 ZIP 含对应模型、许可、验证记录与可重建源码。\n\n从源码构建并与已验证 BDA 的 SHA256 一致；主机测试由本次 Actions 运行。完整固件模拟器证据来自这些确切二进制的本地运行，CI 不运行或分发固件。实机速度需另测。\n\n安装：包内 应用/程序 的 BDA 放到设备同名目录，MiniGPT / MiniGPT4 文件夹放设备盘根目录。两版模型不能混用。\n",encoding='utf-8')
+    (out/'release-notes.md').write_text("# BBKH1-MiniGPT v"+(ROOT/'VERSION').read_text().strip()+"\n\nINT8 0.3.6 / INT4 0.4.2，适用 H1/Y100 V1.41。\n\n- 原生中文输入法与气泡聊天；设备本地推理。\n- INT8 前缀 KV 复用、连续读取减少定位、启动自动比较额外常驻层与 DMA 双缓冲；可见进度且可跳过。\n- INT4 压缩权重优先全内存、双词元 MXU prefill 与前缀复用。\n- 两份安装 ZIP 含对应模型、许可、验证记录与可重建源码。\n\n从源码构建并与已验证 BDA 的 SHA256 一致；主机测试由本次 Actions 运行。完整固件模拟器证据来自这些确切二进制的本地运行，CI 不运行或分发固件。实机速度需另测。\n\n安装：包内 应用/程序 的 BDA 放到设备同名目录，MiniGPT / MiniGPT4 文件夹放设备盘根目录。两版模型不能混用。\n",encoding='utf-8')
 if __name__=='__main__':main()

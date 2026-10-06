@@ -10,7 +10,8 @@ def main():
     archive=args.archive or dest/'g++-mipsel-none-elf-15.2.0.zip'
     if not archive.exists():
         print('Downloading pinned GCC 15.2.0',flush=True)
-        with urllib.request.urlopen(URL,timeout=120) as r,archive.open('wb') as f:
+        request=urllib.request.Request(URL,headers={'User-Agent':'BBKH1-MiniGPT/0.3.6'})
+        with urllib.request.urlopen(request,timeout=120) as r,archive.open('wb') as f:
             while chunk:=r.read(1024*1024):f.write(chunk)
     assert hashlib.sha256(archive.read_bytes()).hexdigest()==SHA256,'Toolchain SHA256 mismatch'
     with zipfile.ZipFile(archive) as z:
