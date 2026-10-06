@@ -1,0 +1,16 @@
+{
+  "bda_sha256": "a8d2f782276259b00dff6b58e19dc8044e1d055a6d884bb07392bd1e9d545a67",
+  "comparison_ui_frame_captured": true,
+  "comparison_skip_keeps_valid_model": true,
+  "reply_matches_reference": true,
+  "physical_hardware_tested": false,
+  "cache_mode": {
+    "initial_layers": 3,
+    "layers": 4,
+    "dma_ticks": 0,
+    "cache_ticks": 10,
+    "samples": 2,
+    "selected": 1,
+    "canceled": 1
+  }
+}

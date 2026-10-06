@@ -1,0 +1,29 @@
+{
+  "bda_sha256": "e1e74058b125025abb92ed0b4af27f53712b36564274b4e814e955945c5ec167",
+  "same_question_same_boot": true,
+  "question": "什么是人工智能？",
+  "warmup": {
+    "input_tokens": 32,
+    "reused_tokens": 0,
+    "prefill_raw_ticks": 309,
+    "first_token_raw_ticks": 309,
+    "matrix_raw_ticks": 238
+  },
+  "cached": {
+    "input_tokens": 28,
+    "reused_tokens": 17,
+    "prefill_raw_ticks": 78,
+    "first_token_raw_ticks": 78,
+    "matrix_raw_ticks": 58
+  },
+  "uncached": {
+    "input_tokens": 28,
+    "reused_tokens": 0,
+    "prefill_raw_ticks": 198,
+    "first_token_raw_ticks": 198,
+    "matrix_raw_ticks": 148
+  },
+  "prefill_reduction_percent": 60.60606060606061,
+  "physical_hardware_tested": false,
+  "clock_registers_unchanged": true
+}

@@ -1,0 +1,15 @@
+/build/
+/dist/
+/.tools/
+/.venv/
+__pycache__/
+*.pyc
+*.exe
+*.dll
+*.raw
+*.nand
+*.bin
+*.bda
+*.sav
+*.log
+!verification/**/*.log

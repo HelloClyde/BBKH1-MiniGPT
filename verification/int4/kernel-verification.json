@@ -1,0 +1,22 @@
+{
+  "bda_sha256": "e1e74058b125025abb92ed0b4af27f53712b36564274b4e814e955945c5ec167",
+  "kernel_sha256": "f967dec21705cb4a537e838a94c5518a6b530f3afb8adc82a81e0fbdd0c4ed3c",
+  "packed_signed_results_exact": true,
+  "irq_status_and_all_xr_control_preserved": true,
+  "q4_mips_and_independent_mxu_decoder_cases": 384,
+  "pair_signed_and_state_cases": 384,
+  "pair_group_float_accumulation_byte_identical": true,
+  "pair_kernel_sha256": "f9d81b04e41285e4b895215674e1f41924976c7b5483087950732e2a8b4560e5",
+  "pair_leaf_64_instructions": 323,
+  "q4_group_float_accumulation_byte_identical": true,
+  "fp16_scale_normal_and_subnormal_conversion_exact": true,
+  "startup_selftest_passed": true,
+  "guest_instructions_by_dot_length": {
+    "64": 236,
+    "128": 368,
+    "512": 1160,
+    "1408": 3008
+  },
+  "instruction_counts_are_not_cycle_timings": true,
+  "physical_hardware_tested": false
+}

@@ -1,0 +1,46 @@
+{
+  "weight_bits": 4,
+  "model_sha256": "b69ee5c66ee2b526e20790a987adcf18357e5c05054403ddfc6aa9a13dedb584",
+  "model_bytes": 13819420,
+  "quantized_from_original_f16": true,
+  "packed_nibbles_match_independent_reference": true,
+  "numpy_math_passed": true,
+  "resident_stream_logits_and_reply_identical": true,
+  "batch_split160_and_allocation_failure_fallback_passed": true,
+  "pair_prefill_even_odd_split_and_scratch_allocation_failure_exact": true,
+  "cancel_context_bounds_reset": true,
+  "corrupt_or_truncated_models_rejected": 7,
+  "samples": [
+    {
+      "prompt": "你好，请简单介绍一下自己。",
+      "reply": "你好，我是一个虚拟的AI，我可以帮助你回答你的问题，提供信息，进行对话，完成任务，甚至是进行决策。你有什么",
+      "numpy_q4_max_error": 0.035889625549316406,
+      "numpy_q4_correlation": 0.9999975952166741,
+      "original_fp32_correlation": 0.935845145519389,
+      "original_fp32_normalized_rms_error": 0.37237516045570374,
+      "first_token_equal_to_fp32": true
+    },
+    {
+      "prompt": "什么是人工智能？",
+      "reply": "人工智能（AI）是指计算机系统能够执行通常需要人类智能才能完成的任务。AI系统通常包括学习、推理、自然语言处理、机器学习",
+      "numpy_q4_max_error": 0.041648149490356445,
+      "numpy_q4_correlation": 0.9999969320011987,
+      "original_fp32_correlation": 0.9453611086638707,
+      "original_fp32_normalized_rms_error": 0.3338867127895355,
+      "first_token_equal_to_fp32": true
+    },
+    {
+      "prompt": "一加一等于几？",
+      "reply": "一加一等于几等于几。\r\n一加一等于几等于几。\r\n一加一等于几等于几。\r\n一加一等于几",
+      "numpy_q4_max_error": 0.04771643877029419,
+      "numpy_q4_correlation": 0.9999967988923634,
+      "original_fp32_correlation": 0.937599686527446,
+      "original_fp32_normalized_rms_error": 0.39604559540748596,
+      "first_token_equal_to_fp32": true
+    }
+  ],
+  "native_reply": "你好，我是一个虚拟的AI，我可以帮助你回答你的问题，提供信息，进行对话，完成任务，甚至是进行决策。你有什么具体的问题或需求？",
+  "native_stderr": "5134 270 397 1589 4304 4045 269 2928 270 397 2482 608 2212 2155 812 270 991 1430 270 859 2735 270 2533 2438 270 5835 345 859 4170 286 608 5183 2412 2581 673 1825 814 2 \r\npositions=69 resident=1 seconds=0.852\r\n",
+  "native_ai_reply": "人工智能（AI）是指计算机系统能够执行通常需要人类智能才能完成的任务。AI系统通常包括学习、推理、自然语言处理、机器学习、专家系统、智能系统等。AI系统通常包括以下几种类型：\r\n\r\n1. 机器学习（ML For）：用于训练计算机系统，使其能够从数据中学习并做出决策。\r\n2. 统计学习（ML For）：用于预测新数据或",
+  "physical_hardware_tested": false
+}

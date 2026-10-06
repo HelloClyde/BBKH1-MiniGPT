@@ -1,0 +1,234 @@
+MiniGPT 0.4.2 INT4 MiniMind2-Small Q4 MXU diagnostics
+DIAG tick_unit=raw rtc_unit=seconds token_log=buffered history=single_turn
+ALLOC_BEGIN bytes=2097152
+ALLOC_END bytes=2097152 raw=0x8253d594
+ALLOC_BEGIN bytes=13819420
+ALLOC_END bytes=13819420 raw=0x8274a0a4
+LOAD result=0 resident=1
+LOAD_SUMMARY ticks=53 rtc_elapsed=1 file_bytes=13819420 scanned_to=13819420 io_bytes=13888568 chunks=215 seeks=5
+MEMORY resident=1 embedding_bytes=1740800 layer_bytes=0 kv_bytes=2097152 work_bytes=51968
+MXU_INIT backend=1 errors=0
+ROUND_BEGIN id=1 prompt_tokens=32 resident=1 rtc=1199176243
+CLOCK cpccr=00400008 cppcr=28080011 clkgr=00000000 unchanged=1
+PERF other raw_ticks=2 calls=0
+PERF read raw_ticks=0 calls=0
+PERF matrix raw_ticks=10 calls=70
+PERF attention raw_ticks=3 calls=20
+PERF ui raw_ticks=0 calls=23
+PHASE prefill other raw_ticks=2 calls=0
+PHASE prefill read raw_ticks=0 calls=0
+PHASE prefill matrix raw_ticks=10 calls=70
+PHASE prefill attention raw_ticks=3 calls=20
+PHASE prefill ui raw_ticks=0 calls=23
+PHASE prefill bytes=0
+PHASE decode other raw_ticks=0 calls=0
+PHASE decode read raw_ticks=0 calls=0
+PHASE decode matrix raw_ticks=0 calls=0
+PHASE decode attention raw_ticks=0 calls=0
+PHASE decode ui raw_ticks=0 calls=0
+PHASE decode bytes=0
+PERF bytes=0 fault=0
+PERF rtc_start=1199176243 rtc_end=1199176244
+ROUND_TIME id=1 prefill_ticks=15 decode_ticks=0 first_token_ticks=0 first_token_valid=0 rtc_elapsed=1
+PREFILL_REUSE tokens=0 computed=32
+ROUND_IO bytes=0 chunks=0 seeks=0
+MXU_ROUND backend=1 calls=880640 terms=56360960 scalar=0 errors=0
+DMA_ROUND double_buffer=0 jobs=0 pending=0 overlap=0 fallback=0 irq_errors=0 swaps=0 read_errors=0
+HOOK_ROUND ready=0 active=0 installs=0 restores=0 rejects=0 busy=0 conflicts=0 cache_syncs=0
+END state=6 tokens=0 ticks=15
+MXU backend=1 calls=880662 terms=56363392 scalar=0 errors=0
+Q4_PAIR groups=440322 terms=56361216 fallback=0
+ROUND_BEGIN id=2 prompt_tokens=32 resident=1 rtc=1199176245
+CLOCK cpccr=00400008 cppcr=28080011 clkgr=00000000 unchanged=1
+PERF other raw_ticks=53 calls=0
+PERF read raw_ticks=0 calls=0
+PERF matrix raw_ticks=400 calls=3006
+PERF attention raw_ticks=100 calls=552
+PERF ui raw_ticks=4 calls=974
+PHASE prefill other raw_ticks=26 calls=0
+PHASE prefill read raw_ticks=0 calls=0
+PHASE prefill matrix raw_ticks=162 calls=897
+PHASE prefill attention raw_ticks=21 calls=256
+PHASE prefill ui raw_ticks=0 calls=282
+PHASE prefill bytes=0
+PHASE decode other raw_ticks=27 calls=0
+PHASE decode read raw_ticks=0 calls=0
+PHASE decode matrix raw_ticks=238 calls=2109
+PHASE decode attention raw_ticks=79 calls=296
+PHASE decode ui raw_ticks=4 calls=692
+PHASE decode bytes=0
+PERF bytes=0 fault=0
+PERF rtc_start=1199176245 rtc_end=1199176259
+TOKEN 1 id=5134 tick=2008
+TOKEN 2 id=270 tick=2016
+TOKEN 3 id=397 tick=2025
+TOKEN 4 id=1589 tick=2034
+TOKEN 5 id=4304 tick=2043
+TOKEN 6 id=4045 tick=2052
+TOKEN 7 id=269 tick=2061
+TOKEN 8 id=2928 tick=2069
+TOKEN 9 id=270 tick=2078
+TOKEN 10 id=397 tick=2087
+TOKEN 11 id=2482 tick=2096
+TOKEN 12 id=608 tick=2104
+TOKEN 13 id=2212 tick=2114
+TOKEN 14 id=2155 tick=2123
+TOKEN 15 id=812 tick=2132
+TOKEN 16 id=270 tick=2141
+TOKEN 17 id=991 tick=2150
+TOKEN 18 id=1430 tick=2160
+TOKEN 19 id=270 tick=2170
+TOKEN 20 id=859 tick=2179
+TOKEN 21 id=2735 tick=2189
+TOKEN 22 id=270 tick=2198
+TOKEN 23 id=2533 tick=2208
+TOKEN 24 id=2438 tick=2217
+TOKEN 25 id=270 tick=2226
+TOKEN 26 id=5835 tick=2236
+TOKEN 27 id=345 tick=2245
+TOKEN 28 id=859 tick=2255
+TOKEN 29 id=4170 tick=2266
+TOKEN 30 id=286 tick=2276
+TOKEN 31 id=608 tick=2286
+TOKEN 32 id=5183 tick=2297
+TOKEN 33 id=2412 tick=2306
+TOKEN 34 id=2581 tick=2316
+TOKEN 35 id=673 tick=2326
+TOKEN 36 id=1825 tick=2336
+TOKEN 37 id=814 tick=2346
+ROUND_TIME id=2 prefill_ticks=209 decode_ticks=348 first_token_ticks=209 first_token_valid=1 rtc_elapsed=14
+PREFILL_REUSE tokens=0 computed=32
+ROUND_IO bytes=0 chunks=0 seeks=0
+MXU_ROUND backend=1 calls=26251264 terms=1680080896 scalar=0 errors=0
+DMA_ROUND double_buffer=0 jobs=0 pending=0 overlap=0 fallback=0 irq_errors=0 swaps=0 read_errors=0
+HOOK_ROUND ready=0 active=0 installs=0 restores=0 rejects=0 busy=0 conflicts=0 cache_syncs=0
+END state=4 tokens=37 ticks=557
+MXU backend=1 calls=27131926 terms=1736444288 scalar=0 errors=0
+Q4_PAIR groups=6076418 terms=777781504 fallback=0
+ROUND_BEGIN id=3 prompt_tokens=28 resident=1 rtc=1199176260
+CLOCK cpccr=00400008 cppcr=28080011 clkgr=00000000 unchanged=1
+PERF other raw_ticks=114 calls=0
+PERF read raw_ticks=0 calls=0
+PERF matrix raw_ticks=685 calls=5752
+PERF attention raw_ticks=246 calls=848
+PERF ui raw_ticks=10 calls=1894
+PHASE prefill other raw_ticks=12 calls=0
+PHASE prefill read raw_ticks=0 calls=0
+PHASE prefill matrix raw_ticks=49 calls=337
+PHASE prefill attention raw_ticks=10 calls=88
+PHASE prefill ui raw_ticks=1 calls=105
+PHASE prefill bytes=0
+PHASE decode other raw_ticks=102 calls=0
+PHASE decode read raw_ticks=0 calls=0
+PHASE decode matrix raw_ticks=636 calls=5415
+PHASE decode attention raw_ticks=236 calls=760
+PHASE decode ui raw_ticks=9 calls=1789
+PHASE decode bytes=0
+PERF bytes=0 fault=0
+PERF rtc_start=1199176260 rtc_end=1199176287
+TOKEN 1 id=2835 tick=2496
+TOKEN 2 id=1064 tick=2505
+TOKEN 3 id=2928 tick=2514
+TOKEN 4 id=1033 tick=2523
+TOKEN 5 id=3597 tick=2531
+TOKEN 6 id=4023 tick=2540
+TOKEN 7 id=1733 tick=2548
+TOKEN 8 id=1237 tick=2557
+TOKEN 9 id=4631 tick=2566
+TOKEN 10 id=1956 tick=2575
+TOKEN 11 id=590 tick=2583
+TOKEN 12 id=1897 tick=2592
+TOKEN 13 id=1728 tick=2601
+TOKEN 14 id=3041 tick=2609
+TOKEN 15 id=2533 tick=2618
+TOKEN 16 id=269 tick=2627
+TOKEN 17 id=2438 tick=2636
+TOKEN 18 id=286 tick=2645
+TOKEN 19 id=2928 tick=2654
+TOKEN 20 id=1733 tick=2663
+TOKEN 21 id=1956 tick=2673
+TOKEN 22 id=1146 tick=2682
+TOKEN 23 id=1511 tick=2691
+TOKEN 24 id=341 tick=2700
+TOKEN 25 id=1550 tick=2709
+TOKEN 26 id=578 tick=2718
+TOKEN 27 id=341 tick=2727
+TOKEN 28 id=1783 tick=2736
+TOKEN 29 id=1886 tick=2746
+TOKEN 30 id=1958 tick=2755
+TOKEN 31 id=341 tick=2765
+TOKEN 32 id=6309 tick=2775
+TOKEN 33 id=341 tick=2785
+TOKEN 34 id=2147 tick=2796
+TOKEN 35 id=680 tick=2807
+TOKEN 36 id=1733 tick=2817
+TOKEN 37 id=341 tick=2827
+TOKEN 38 id=1728 tick=2838
+TOKEN 39 id=1733 tick=2848
+TOKEN 40 id=508 tick=2858
+TOKEN 41 id=286 tick=2869
+TOKEN 42 id=2928 tick=2879
+TOKEN 43 id=1733 tick=2890
+TOKEN 44 id=1956 tick=2900
+TOKEN 45 id=1146 tick=2910
+TOKEN 46 id=1104 tick=2920
+TOKEN 47 id=1918 tick=2930
+TOKEN 48 id=617 tick=2940
+TOKEN 49 id=2855 tick=2950
+TOKEN 50 id=355 tick=2960
+TOKEN 51 id=201 tick=2970
+TOKEN 52 id=201 tick=2980
+TOKEN 53 id=19 tick=2990
+TOKEN 54 id=16 tick=3001
+TOKEN 55 id=223 tick=3011
+TOKEN 56 id=6309 tick=3022
+TOKEN 57 id=1064 tick=3032
+TOKEN 58 id=47 tick=3042
+TOKEN 59 id=46 tick=3053
+TOKEN 60 id=1494 tick=3063
+TOKEN 61 id=1033 tick=3074
+TOKEN 62 id=355 tick=3085
+TOKEN 63 id=2294 tick=3096
+TOKEN 64 id=2875 tick=3107
+TOKEN 65 id=4023 tick=3117
+TOKEN 66 id=1733 tick=3128
+TOKEN 67 id=270 tick=3138
+TOKEN 68 id=650 tick=3149
+TOKEN 69 id=651 tick=3160
+TOKEN 70 id=1237 tick=3171
+TOKEN 71 id=1083 tick=3183
+TOKEN 72 id=1327 tick=3194
+TOKEN 73 id=413 tick=3206
+TOKEN 74 id=1511 tick=3218
+TOKEN 75 id=581 tick=3230
+TOKEN 76 id=3839 tick=3242
+TOKEN 77 id=4170 tick=3254
+TOKEN 78 id=286 tick=3267
+TOKEN 79 id=201 tick=3279
+TOKEN 80 id=20 tick=3291
+TOKEN 81 id=16 tick=3302
+TOKEN 82 id=223 tick=3314
+TOKEN 83 id=1191 tick=3326
+TOKEN 84 id=718 tick=3338
+TOKEN 85 id=1511 tick=3349
+TOKEN 86 id=1064 tick=3360
+TOKEN 87 id=47 tick=3372
+TOKEN 88 id=46 tick=3384
+TOKEN 89 id=1494 tick=3395
+TOKEN 90 id=1033 tick=3407
+TOKEN 91 id=355 tick=3419
+TOKEN 92 id=2294 tick=3431
+TOKEN 93 id=4433 tick=3443
+TOKEN 94 id=828 tick=3454
+TOKEN 95 id=1327 tick=3466
+TOKEN 96 id=673 tick=3479
+ROUND_TIME id=3 prefill_ticks=72 decode_ticks=983 first_token_ticks=72 first_token_valid=1 rtc_elapsed=27
+PREFILL_REUSE tokens=17 computed=11
+ROUND_IO bytes=0 chunks=0 seeks=0
+MXU_ROUND backend=1 calls=42254336 terms=2704277504 scalar=0 errors=0
+DMA_ROUND double_buffer=0 jobs=0 pending=0 overlap=0 fallback=0 irq_errors=0 swaps=0 read_errors=0
+HOOK_ROUND ready=0 active=0 installs=0 restores=0 rejects=0 busy=0 conflicts=0 cache_syncs=0
+END state=4 tokens=96 ticks=1055
+MXU backend=1 calls=69386262 terms=145754496 scalar=0 errors=0
+Q4_PAIR groups=7837698 terms=1003225344 fallback=0
+EXIT

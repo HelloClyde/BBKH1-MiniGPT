@@ -1,0 +1,107 @@
+MiniGPT 0.3.6 MiniMind2-Small Q8 MXU diagnostics
+DIAG tick_unit=raw rtc_unit=seconds token_log=buffered history=single_turn
+ALLOC_BEGIN bytes=2097152
+ALLOC_END bytes=2097152 raw=0x8253d594
+ALLOC_BEGIN bytes=26096156
+ALLOC_END bytes=26096156 raw=0x00000000
+ALLOC_BEGIN bytes=3302400
+ALLOC_END bytes=3302400 raw=0x8274a0a4
+ALLOC_BEGIN bytes=2840576
+ALLOC_END bytes=2840576 raw=0x82a704ac
+ALLOC_BEGIN bytes=2840576
+ALLOC_END bytes=2840576 raw=0x82d25cb4
+ALLOC_BEGIN bytes=2097152
+ALLOC_END bytes=2097152 raw=0x82fdb4bc
+ALLOC_BEGIN bytes=2840576
+ALLOC_END bytes=2840576 raw=0x831db4c4
+ALLOC_BEGIN bytes=2840576
+ALLOC_END bytes=2840576 raw=0x83490ccc
+ALLOC_BEGIN bytes=2840576
+ALLOC_END bytes=2840576 raw=0x837464d4
+ALLOC_BEGIN bytes=2840576
+ALLOC_END bytes=2840576 raw=0x00000000
+CACHE_MODE initial_layers=3 layers=4 dma_ticks=109 cache_ticks=86 samples=2 selected=1 canceled=0
+LOAD_FILE opened=1 actual_bytes=26096156 expected_bytes=26096156
+CACHE_WARMUP layers=4 read_aborts=0 canceled=0 quit=0
+LOAD result=0 resident=0
+LOAD_SUMMARY ticks=371 rtc_elapsed=9 file_bytes=26096156 scanned_to=26096156 io_bytes=94800888 chunks=1466 seeks=7
+MEMORY resident=0 embedding_bytes=3302400 layer_bytes=2840576 kv_bytes=2097152 work_bytes=51968
+LAYER_CACHE layers=4 bytes=11362304 reserve_bytes=2097152
+MXU_INIT backend=1 errors=0
+ROUND_BEGIN id=1 prompt_tokens=32 resident=0 rtc=1199176251
+CLOCK cpccr=00400008 cppcr=28080011 clkgr=00000000 unchanged=1
+PERF other raw_ticks=4 calls=0
+PERF read raw_ticks=0 calls=0
+PERF matrix raw_ticks=10 calls=238
+PERF attention raw_ticks=1 calls=34
+PERF ui raw_ticks=0 calls=71
+PHASE prefill other raw_ticks=4 calls=0
+PHASE prefill read raw_ticks=0 calls=0
+PHASE prefill matrix raw_ticks=10 calls=238
+PHASE prefill attention raw_ticks=1 calls=34
+PHASE prefill ui raw_ticks=0 calls=71
+PHASE prefill bytes=0
+PHASE decode other raw_ticks=0 calls=0
+PHASE decode read raw_ticks=0 calls=0
+PHASE decode matrix raw_ticks=0 calls=0
+PHASE decode attention raw_ticks=0 calls=0
+PHASE decode ui raw_ticks=0 calls=0
+PHASE decode bytes=0
+PERF bytes=0 fault=0
+PERF rtc_start=1199176251 rtc_end=1199176252
+ROUND_TIME id=1 prefill_ticks=15 decode_ticks=0 first_token_ticks=0 first_token_valid=0 rtc_elapsed=1
+PREFILL_REUSE tokens=0 computed=32
+ROUND_IO bytes=0 chunks=0 seeks=0
+LAYER_CACHE_ROUND layers=4 hits=2 misses=0 avoided_bytes=5681152
+MXU_ROUND backend=1 calls=156672 terms=95813632 scalar=0 errors=0
+DMA_ROUND double_buffer=0 jobs=0 pending=0 overlap=0 fallback=0 irq_errors=0 swaps=0 read_errors=0
+HOOK_ROUND ready=1 active=0 installs=0 restores=0 rejects=0 busy=0 conflicts=0 cache_syncs=0
+END state=6 tokens=0 ticks=15
+MXU backend=1 calls=327168 terms=185991168 scalar=0 errors=0
+ROUND_BEGIN id=2 prompt_tokens=32 resident=0 rtc=1199176253
+CLOCK cpccr=00400008 cppcr=28080011 clkgr=00000000 unchanged=1
+PERF other raw_ticks=33 calls=0
+PERF read raw_ticks=711 calls=68
+PERF matrix raw_ticks=104 calls=2705
+PERF attention raw_ticks=27 calls=384
+PERF ui raw_ticks=5 calls=3871
+PHASE prefill other raw_ticks=23 calls=0
+PHASE prefill read raw_ticks=44 calls=4
+PHASE prefill matrix raw_ticks=64 calls=1793
+PHASE prefill attention raw_ticks=13 calls=256
+PHASE prefill ui raw_ticks=1 calls=703
+PHASE prefill bytes=11362304
+PHASE decode other raw_ticks=10 calls=0
+PHASE decode read raw_ticks=667 calls=64
+PHASE decode matrix raw_ticks=40 calls=912
+PHASE decode attention raw_ticks=14 calls=128
+PHASE decode ui raw_ticks=4 calls=3168
+PHASE decode bytes=181796864
+PERF bytes=193159168 fault=0
+PERF rtc_start=1199176253 rtc_end=1199176275
+TOKEN 1 id=5134 tick=2277
+TOKEN 2 id=2207 tick=2321
+TOKEN 3 id=1046 tick=2365
+TOKEN 4 id=654 tick=2410
+TOKEN 5 id=2486 tick=2458
+TOKEN 6 id=428 tick=2510
+TOKEN 7 id=608 tick=2554
+TOKEN 8 id=2504 tick=2599
+TOKEN 9 id=867 tick=2644
+TOKEN 10 id=286 tick=2688
+TOKEN 11 id=608 tick=2733
+TOKEN 12 id=5515 tick=2777
+TOKEN 13 id=1541 tick=2822
+TOKEN 14 id=1167 tick=2868
+TOKEN 15 id=1129 tick=2914
+TOKEN 16 id=814 tick=2962
+ROUND_TIME id=2 prefill_ticks=145 decode_ticks=735 first_token_ticks=145 first_token_valid=1 rtc_elapsed=22
+PREFILL_REUSE tokens=0 computed=32
+ROUND_IO bytes=193159168 chunks=2992 seeks=16
+LAYER_CACHE_ROUND layers=4 hits=68 misses=68 avoided_bytes=193159168
+MXU_ROUND backend=1 calls=1878272 terms=1137836032 scalar=0 errors=0
+DMA_ROUND double_buffer=0 jobs=0 pending=0 overlap=0 fallback=0 irq_errors=0 swaps=0 read_errors=0
+HOOK_ROUND ready=1 active=0 installs=0 restores=0 rejects=0 busy=0 conflicts=0 cache_syncs=0
+END state=4 tokens=16 ticks=880
+MXU backend=1 calls=2205440 terms=1323827200 scalar=0 errors=0
+EXIT

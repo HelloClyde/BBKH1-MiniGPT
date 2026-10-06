@@ -1,0 +1,308 @@
+{
+  "bda_sha256": "a8d2f782276259b00dff6b58e19dc8044e1d055a6d884bb07392bd1e9d545a67",
+  "physical_hardware_tested": false,
+  "required_validation_send_touch_ignored": true,
+  "cache_warmup_skip_keeps_valid_model": true,
+  "cached_layers": 2,
+  "load_result": 0,
+  "reply_matches_reference": true,
+  "generated_tokens": 16,
+  "round_io_bytes": 289738752,
+  "answer_file_unchanged": true,
+  "diagnosis": {
+    "load": {
+      "ticks": 157,
+      "rtc_elapsed": 4,
+      "file_bytes": 26096156,
+      "scanned_to": 26096156,
+      "io_bytes": 36262904,
+      "chunks": 559,
+      "seeks": 3
+    },
+    "memory": {
+      "resident": 0,
+      "embedding_bytes": 3302400,
+      "layer_bytes": 2840576,
+      "kv_bytes": 2097152,
+      "work_bytes": 51968
+    },
+    "rounds": [
+      {
+        "begin": {
+          "id": 1,
+          "prompt_tokens": 32,
+          "resident": 0,
+          "rtc": 1199176232
+        },
+        "stages": {
+          "other": {
+            "raw_ticks": 41,
+            "calls": 0
+          },
+          "read": {
+            "raw_ticks": 1170,
+            "calls": 102
+          },
+          "matrix": {
+            "raw_ticks": 117,
+            "calls": 2417
+          },
+          "attention": {
+            "raw_ticks": 25,
+            "calls": 384
+          },
+          "ui": {
+            "raw_ticks": 11,
+            "calls": 5416
+          }
+        },
+        "phases": {
+          "prefill": {
+            "other": {
+              "raw_ticks": 28,
+              "calls": 0
+            },
+            "read": {
+              "raw_ticks": 76,
+              "calls": 6
+            },
+            "matrix": {
+              "raw_ticks": 77,
+              "calls": 1793
+            },
+            "attention": {
+              "raw_ticks": 8,
+              "calls": 256
+            },
+            "ui": {
+              "raw_ticks": 3,
+              "calls": 792
+            },
+            "bytes": 17043456
+          },
+          "decode": {
+            "other": {
+              "raw_ticks": 13,
+              "calls": 0
+            },
+            "read": {
+              "raw_ticks": 1094,
+              "calls": 96
+            },
+            "matrix": {
+              "raw_ticks": 40,
+              "calls": 624
+            },
+            "attention": {
+              "raw_ticks": 17,
+              "calls": 128
+            },
+            "ui": {
+              "raw_ticks": 8,
+              "calls": 4624
+            },
+            "bytes": 272695296
+          }
+        },
+        "tokens": [
+          {
+            "number": 1,
+            "id": 5134,
+            "tick": 1474
+          },
+          {
+            "number": 2,
+            "id": 2207,
+            "tick": 1547
+          },
+          {
+            "number": 3,
+            "id": 1046,
+            "tick": 1619
+          },
+          {
+            "number": 4,
+            "id": 654,
+            "tick": 1694
+          },
+          {
+            "number": 5,
+            "id": 2486,
+            "tick": 1765
+          },
+          {
+            "number": 6,
+            "id": 428,
+            "tick": 1835
+          },
+          {
+            "number": 7,
+            "id": 608,
+            "tick": 1906
+          },
+          {
+            "number": 8,
+            "id": 2504,
+            "tick": 1978
+          },
+          {
+            "number": 9,
+            "id": 867,
+            "tick": 2049
+          },
+          {
+            "number": 10,
+            "id": 286,
+            "tick": 2121
+          },
+          {
+            "number": 11,
+            "id": 608,
+            "tick": 2194
+          },
+          {
+            "number": 12,
+            "id": 5515,
+            "tick": 2265
+          },
+          {
+            "number": 13,
+            "id": 1541,
+            "tick": 2337
+          },
+          {
+            "number": 14,
+            "id": 1167,
+            "tick": 2411
+          },
+          {
+            "number": 15,
+            "id": 1129,
+            "tick": 2492
+          },
+          {
+            "number": 16,
+            "id": 814,
+            "tick": 2574
+          }
+        ],
+        "complete": true,
+        "clock": {
+          "cpccr": 4194312,
+          "cppcr": 671612945,
+          "clkgr": 0,
+          "unchanged": 1
+        },
+        "perf": {
+          "bytes": 289738752,
+          "fault": 0
+        },
+        "time": {
+          "id": 1,
+          "prefill_ticks": 192,
+          "decode_ticks": 1172,
+          "first_token_ticks": 192,
+          "first_token_valid": 1,
+          "rtc_elapsed": 34
+        },
+        "prefill_reuse": {
+          "tokens": 0,
+          "computed": 32
+        },
+        "io": {
+          "bytes": 289738752,
+          "chunks": 4488,
+          "seeks": 17
+        },
+        "layer_cache": {
+          "layers": 2,
+          "hits": 34,
+          "misses": 102,
+          "avoided_bytes": 96579584
+        },
+        "mxu": {
+          "backend": 1,
+          "calls": 2099456,
+          "terms": 1137836032,
+          "scalar": 0,
+          "errors": 0
+        },
+        "dma": {
+          "double_buffer": 1,
+          "jobs": 96,
+          "pending": 0,
+          "overlap": 0,
+          "fallback": 294912,
+          "irq_errors": 0,
+          "swaps": 112,
+          "read_errors": 0
+        },
+        "hook": {
+          "ready": 1,
+          "active": 0,
+          "installs": 96,
+          "restores": 96,
+          "rejects": 0,
+          "busy": 0,
+          "conflicts": 0,
+          "cache_syncs": 192
+        },
+        "end": {
+          "state": 4,
+          "tokens": 16,
+          "ticks": 1364
+        },
+        "read_percent": 85.77712609970675,
+        "observed_tick_hz": 40.11764705882353,
+        "tokens_per_second": 0.47058823529411764,
+        "consistency": {
+          "stage_ticks_match": true,
+          "phase_ticks_match": true,
+          "phase_bytes_match": true,
+          "read_bytes_accounted": true,
+          "token_count_match": true,
+          "timing_split_match": true
+        }
+      }
+    ],
+    "notes": [
+      "raw_ticks are firmware timer units; no fixed 40/80 Hz assumption",
+      "read time includes filesystem, ECC and DMA callback computation",
+      "DMA overlap counts tiles started while DMA was pending, not saved time",
+      "token records are buffered and written after inference; exit closes the log"
+    ],
+    "load_interruptions": [
+      {
+        "cache_layer": 3,
+        "offset": 9052700,
+        "done": 1114112,
+        "cancel": 1,
+        "quit": 0
+      }
+    ],
+    "load_file": {
+      "opened": 1,
+      "actual_bytes": 26096156,
+      "expected_bytes": 26096156
+    },
+    "cache_warmup": {
+      "layers": 2,
+      "read_aborts": 1,
+      "canceled": 1,
+      "quit": 0
+    },
+    "layer_cache": {
+      "layers": 2,
+      "bytes": 5681152,
+      "reserve_bytes": 2097152
+    },
+    "exit_recorded": true
+  },
+  "cache_progress_visible_in_firmware_frame": true,
+  "cache_progress_ui": [
+    2,
+    1,
+    1703936,
+    59
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "model_sha256": "b69ee5c66ee2b526e20790a987adcf18357e5c05054403ddfc6aa9a13dedb584",
+  "engine_sha256": "c98fee8828b2d0121adfda97454e3709d4c43dca72eb8510619e911323327cb9",
+  "prefix_cache_repeated_different_shrinking_singleton_cancel_and_decode_exact": true,
+  "pair_prefill_even_odd_split_and_scratch_allocation_failure_exact": true,
+  "reference_uses_full_uncached_prompt": true,
+  "physical_hardware_tested": false,
+  "stdout": "cancel, bounds, reset PASS\n"
+}

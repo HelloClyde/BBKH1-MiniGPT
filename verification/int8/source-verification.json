@@ -1,0 +1,7 @@
+{
+  "bda_sha256": "a8d2f782276259b00dff6b58e19dc8044e1d055a6d884bb07392bd1e9d545a67",
+  "corresponding_source_rebuild_byte_identical": true,
+  "sdk_pinned_snapshot": true,
+  "model_download_required": false,
+  "stdout": "PASS BDA 1564116 bytes SHA256 a8d2f782276259b00dff6b58e19dc8044e1d055a6d884bb07392bd1e9d545a67\n"
+}
